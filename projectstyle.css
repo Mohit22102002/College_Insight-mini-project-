@@ -1,0 +1,295 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@600;900&family=Patua+One&family=Pridi:wght@200;600&family=Rubik:wght@300&family=Sniglet&display=swap');
+/*import consist of all fonts selected from google font*/
+*{ 
+	box-sizing: border-box; /*for enabling padding*/
+
+} /*{} represents universal block*/
+
+header,section{
+	overflow-x: hidden; /*hides all the extra spaxe from header and section*/
+}
+
+:root{
+ --Snigle-font: "Sniglet",cursive; /*--<name> creates a variable of identity 'name' and singlet is the font assigned to the variable*/
+ --Rubik: "Rubik" cursive;
+ --Patua: "Patua One"cursive;
+ --Lobster: "Lobster" cursive;
+ --light-black: #2e2c2caf; /*assigns color*/
+ --bggradient: linear-gradient(
+ 	to bottom,
+ 	#dd2476,#ff512f);
+ --light-gray: rgba(255,255,255,0.5);
+
+} /*this block assigns varable names to each font style and color to different variable names*/
+
+header a{ /* to all anchor tags in header */
+	font-family: var(--Snigle-font); /*gives font-family style from above specified variable name*/
+	font-size: 0.9em;  /*relative unit*/
+	color: ghostwhite;
+}
+
+header{
+	background: #dd24760; /*background color*/
+	/*background: var(--bggradient); /*gradient color*/
+	background-image: url('project.jpeg');
+	background-size: 1700px 750px; /*width,height*/
+}
+
+.dropdown-content{ /*selects the dropdown content*/
+	display: none;
+	position: absolute;
+	background: burlywood;
+	min-width: 160px;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0.0.2);
+	z-index: 1;
+}
+
+.dropdown-content a{ /*selects the anchor tag in dropdown content*/
+	color: black;
+	padding: 12 px 16 px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{ /*when we hover on this pages it displays nested items*/
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{ /*displays dropdown content when we hover on it*/
+	display: block;
+}
+
+header .nav-item:last-child{
+	padding-right: 10.5em;
+}
+
+header .nav-item{
+	padding: 0.9em;
+}
+
+header .navbar-brand{
+	padding-left: 8rem;
+}
+
+header .nav-link:hover{ /*makes nav blcack when we take cursor on it*/
+	color: black;
+}
+
+header .row .col-md-5{
+	padding:  4.2vmin 1vmin;
+}
+
+header .row .col-md-7{
+	padding: 22vmin 1vmin;
+	padding-bottom: 35vmin;
+	font-family: var(--Rubik);
+	color: white;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+    border-radius: 50px;
+}
+
+header .dropdown .col-md-7 h6{
+	padding: 1vmin;
+	letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1{
+	font-size: 8.5vmin;
+	font-weight: bold;
+	padding: 0.1em 0em;
+}
+header .container .col-md-7 p{
+	padding: 1vmin 5vmin;
+}
+
+/*header .container .col-md-7 button{
+	border-radius: 30px;
+	font-weight: bold; 
+	background-color: white;
+}*/
+
+header .container .col-md-7 a{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-radius: 30px;
+	font-weight: bold; 
+	background-color: black;
+	color: ghostwhite;
+	size: 20px;
+}
+/*section-1*/
+
+.section-1{
+	padding: 20vmin 0;
+	height: 800px;
+}
+
+.section-1 .row .col-md-6 .pray img{
+	opacity: 0.8;
+	width: 80%;
+	border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last child{
+	position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+	position: absolute;
+	top: 7vmin;
+	left: -18vmin;
+	background: whitesmoke;
+	border-radius: 3px;
+	text-align: left;
+	padding: 13vmin 5vmin 20vmin;
+	box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
+	font-family: var(--Rubik);
+	z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+	font-weight: bold;
+	padding: 0.4em 0;
+	font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p{
+	font-size: 0.9em;
+	color: rgba(0,0,0,0.5);
+}
+
+/*section-2*/
+
+.cover{
+	width: 100%;
+	height: 55vmin;
+	background: url('icon.jpg');
+	background-position: -24em -19em;
+	background-size: 100%;
+	position: relative;
+}
+
+.cover .content{
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	padding-top: 19vmin;
+}
+
+.cover .content>h1{
+	font-family: var(--Patua);
+	font-size: 6vmin;
+	color: ghostwhite;
+}
+
+.cover .content>h4{
+	font-family: var(--Rubik);
+	font-size: 2vmin;
+	color: navajowhite;
+}
+
+.numbers.rect{
+	position: relative;
+	z-index: 1;
+	background: white;
+	width: 17rem;
+	height: 12rem;
+	padding-top: 3.5vmin;
+	margin: 1rem;
+	border-radius: .5em;
+	box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+
+.numbers .rect{
+	position: relative;
+	z-index: 1;
+	background: black;
+	width: 17rem;
+	height: 12rem;
+	padding-top: 3.5vmin;
+	margin: 1rem;
+	border-radius: .5em;
+	box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+
+.numbers .rect h1{
+	font-size: 1rem;
+	color: navajowhite;
+}
+
+.numbers .rect h4{
+	font-family: var(--Sniglet-font);
+	color: tomato;
+}
+
+/*fotter*/
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer img
+{
+  size: 50px;
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.copyright-text
+{
+  margin:0
+}
+

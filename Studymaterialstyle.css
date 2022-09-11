@@ -1,0 +1,249 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@600;900&family=Patua+One&family=Pridi:wght@200;600&family=Rubik:wght@300&family=Sniglet&display=swap');
+/*import consist of all fonts selected from google font*/
+*{ 
+	box-sizing: border-box; /*for enabling padding*/
+
+} /*{} represents universal block*/
+
+header,section{
+	overflow-x: hidden; /*hides all the extra spaxe from header and section*/
+}
+
+:root{
+ --Snigle-font: "Sniglet",cursive; /*--<name> creates a variable of identity 'name' and singlet is the font assigned to the variable*/
+ --Rubik: "Rubik" cursive;
+ --Patua: "Patua One"cursive;
+ --Lobster: "Lobster" cursive;
+ --light-black: #2e2c2caf; /*assigns color*/
+ --bggradient: linear-gradient(
+ 	to bottom,
+ 	#dd2476,#ff512f);
+ --light-gray: rgba(255,255,255,0.5);
+
+} /*this block assigns varable names to each font style and color to different variable names*/
+
+header a{ /* to all anchor tags in header */
+	font-family: var(--Snigle-font); /*gives font-family style from above specified variable name*/
+	font-size: 0.9em;  /*relative unit*/
+	color: ghostwhite;
+}
+
+header{
+	background: #dd24760; /*background color*/
+	/*background: var(--bggradient); /*gradient color*/
+  background-image: url('studymaterial.png');
+  background-position: 1000px 700px;
+}
+
+.dropdown-content{ /*selects the dropdown content*/
+	display: none;
+	position: absolute;
+	background: burlywood;
+	min-width: 160px;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0.0.2);
+	z-index: 1;
+}
+
+.dropdown-content a{ /*selects the anchor tag in dropdown content*/
+	color: black;
+	padding: 12 px 16 px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{ /*when we hover on this pages it displays nested items*/
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{ /*displays dropdown content when we hover on it*/
+	display: block;
+}
+
+header .nav-item:last-child{
+	padding-right: 10.5em;
+}
+
+header .nav-item{
+	padding: 0.9em;
+}
+
+header .navbar-brand{
+	padding-left: 8rem;
+}
+
+header .nav-link:hover{ /*makes nav blcack when we take cursor on it*/
+	color: black;
+}
+
+header .row .col-md-5{
+	padding:  4.2vmin 1vmin;
+}
+
+header .row .col-md-7{
+	padding: 22vmin 1vmin;
+	padding-bottom: 35vmin;
+	font-family: var(--Rubik);
+	color: white;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+    border-radius: 50px;
+}
+
+header .dropdown .col-md-7 h6{
+	padding: 1vmin;
+	letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1{
+	font-size: 8.5vmin;
+	font-weight: bold;
+	padding: 0.1em 0em;
+}
+header .container .col-md-7 p{
+	padding: 1vmin 5vmin;
+}
+
+/*header .container .col-md-7 button{
+	border-radius: 30px;
+	font-weight: bold; 
+	background-color: white;
+}*/
+
+header .container .col-md-7 a{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-radius: 30px;
+	font-weight: bold; 
+	background-color: black;
+	color: ghostwhite;
+	size: 20px;
+}
+
+	.firstsection {
+		background-color: darkblue;
+		height: 700px;
+		font-family: var(--Patua) ;
+	}
+
+	.firstsection h5{
+		color: gold;
+	}
+
+	.firstsection a{
+		color: snow;
+	}
+
+	.secondsection {
+		background-color: yellowgreen;
+		height: 700px;
+	}
+
+	.secondsection h5{
+		color: black;
+	}
+
+	.secondsection a{
+		color: white;
+	}
+
+	.thirdsection {
+		background-color: darkslategray;
+		height: 600px;
+		padding-top: 70px;
+	}
+
+	.thirdsection h5{
+		color: gold;
+	}
+
+	.thirdsection h6{
+		color: lightsteelblue;
+	}
+
+
+	.thirdsection a{
+		color: snow;
+	}
+
+	.box-main {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		color: black;
+		max-width: 80%;
+		margin: auto;
+		height: 80%;
+	}
+
+	
+
+	/*fotter*/
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer img
+{
+  size: 50px;
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.copyright-text
+{
+  margin:0
+}
+
